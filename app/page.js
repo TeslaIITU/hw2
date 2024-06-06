@@ -28,6 +28,7 @@ export default function Home () {
   }, []);
   useEffect(() => {
     handleFilterChange(filter); // Вызываем обновление списка задач при изменении фильтра
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter, tasks]);
 
   const handleAddTask = () => {
